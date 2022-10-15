@@ -1,9 +1,10 @@
-// Pair And Vectors...
+// C++ STL...
 
 #include <bits/stdc++.h>
 
 using namespace std;
-// void printVec(vector<pair<int, int>> &v)
+
+
 
 void printVec(vector<int> &v){
     cout << "Size: " << v.size() << endl;
@@ -23,6 +24,10 @@ void printVec(vector<int> &v){
     cout << endl;
 }
 
+
+
+
+
 void printMap(map<string, int> &m)
 {
     cout << "Map size is: " << m.size() << endl;
@@ -31,6 +36,9 @@ void printMap(map<string, int> &m)
         cout << pr.first << " " << pr.second << endl;
     }
 }
+
+
+
 
 
 int main()
@@ -390,17 +398,31 @@ int main()
     // m["Nikhil"] = "Ram";
     // printMap(m);
 
-    map<string, int> m;
-    int n;
-    cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        string s;
-        cin >> s;
-        m[s]++;
-    }
 
-    printMap(m);
+
+
+
+// Print unique strings in lexiographical order with their  frequency...
+    // map<string, int> m;
+    // int n;
+    // cin >> n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     string s;
+    //     cin >> s;
+    //     m[s]++;
+    // }
+    // printMap(m); 
+
+
+
+
+
+
+
+// Unordered Maps....
+
+
 
     return 0;   
 } 
