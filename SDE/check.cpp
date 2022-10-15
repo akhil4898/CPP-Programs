@@ -236,6 +236,8 @@ int main()
     // }
     // cout << endl;
 
+
+
     // // declare Iterator...
     // vector<int> :: iterator it = v.begin();
     // cout << (*(it + 1)) << endl;
@@ -245,6 +247,9 @@ int main()
     //     cout << (*it) << " ";
     // }
     // cout << endl;
+
+
+
 
     // // declare vector of pair to iterate elements..
     // vector<pair<int, int> > v_p = {{1,2}, {2,3}, {4,5}};    
@@ -256,17 +261,50 @@ int main()
     //     // (*it).first <=> it->first both are same....
     // }
     
+
+
+
     // Range based loops...
-    vector<int> v = {2,3,4,5,6,7};
-    for(int &value : v)     // Always use reference operator for copy vector...
+    // vector<int> v = {2,3,4,5,6,7};
+    // for(int &value : v)     // Always use reference operator for actual vector not copy of vector...
+    // {
+    //     // value++;
+    //     cout << value << " ";
+    // }
+    // cout << endl;
+
+    // Pair
+
+    // vector<pair<int, int>> v_p = {{1,2}, {2,3}, {3,4}};
+    // for(pair<int, int> &value : v_p)
+    // {
+    //     cout << value.first << " " << value.second << endl;
+    // }
+    
+
+    // Auto keyword....
+
+    auto a = 1.230;
+    cout << a << endl;
+    vector<int> v = {1,2,3,4,5,6};
+    // vector<int> :: iterator it;
+    // for (it = v.begin(); it != v.end(); it++)
+    // {
+    //     cout << (*it) << " ";
+    // }
+    // cout << endl;
+
+    // We also use auto keyword for print vector elements And we don't need to write this statement [ vector<int> :: iterator it; ]....
+    for(auto it = v.begin(); it != v.end(); it++)
     {
-        value++;
-        // cout << value << " ";
+        cout << (*it) << " ";
     }
     cout << endl;
-     for(int val : v)
+
+    // We also use (Auto Range Loop) for print vector elements....
+    for (auto &value : v)
     {
-        cout << val << " ";
+        cout << value << " ";
     }
     cout << endl;
     
