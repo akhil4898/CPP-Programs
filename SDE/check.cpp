@@ -25,7 +25,7 @@ void printVec(vector<int> &v){
 
 void printMap(map<int, string> &m)
 {
-    cout << m.size() << endl;
+    cout << "Map size is: " << m.size() << endl;
     for(auto &pr : m)
     {
         cout << pr.first << " " << pr.second << endl;
@@ -359,9 +359,11 @@ int main()
 
     
 // Erase Operation....
-    auto it = m.find(3);
-    if(it != m.end())
-        m.erase(it);
+    // auto it = m.find(3);
+    // if(it != m.end())
+    //     m.erase(it);
+    // printMap(m);
+    m.clear();
     printMap(m);
 
     // map<int, string> :: iterator it;
