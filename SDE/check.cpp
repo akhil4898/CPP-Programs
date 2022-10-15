@@ -326,8 +326,9 @@ int main()
     
 // Maps...(ordered maps or simple maps...)
 
+    // Time complexity of insertion, find, and accessing the element in map is -> O(log(n)) 
     map<int, string> m;
-    m[1] = "Akhil";
+    m[1] = "Akhil";    //TC - > O(log(n))
     m[9] = "Rahul";
     m[2] = "Nikhil";
     m[9] = "Shanti"; // Updated value will be store in same key...
@@ -337,6 +338,19 @@ int main()
     m.insert({3, "Rohan"});
     m.insert(make_pair(5, "Mukul"));
     printMap(m);              // Function call....
+
+    // map<int, string> :: iterator it;
+
+
+    auto it = m.find(2);     // Always return iterator....
+    if (it == m.end())
+        cout << "No value exist..." << endl;
+    else
+        cout << "Value found.. :)" << endl;
+        cout << it->first << " " << it->second << endl;
+
+    
+
 
     // map<int, string> :: iterator it;
     // for(it = m.begin(); it != m.end(); it++)
