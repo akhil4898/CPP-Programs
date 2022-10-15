@@ -3,14 +3,17 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// void printVec(vector<pair<int, int>> &v)
 
-void printVec(vector<pair<int, int>> &v){
+void printVec(vector<int> &v){
     cout << "Size: " << v.size() << endl;
     for (int i = 0; i < v.size(); i++)
     {
-        cout << v[i].first << " " << v[i].second << endl;
+        cout << v[i] << " ";
+        // cout << v[i].first << " " << v[i].second << endl;
     }
     // v.push_back(5);
+    cout << endl;
 }
 
 int main()
@@ -157,10 +160,55 @@ int main()
 
 
 
-// 
+// Array of vectors   v\s   Vector of Vectors...
+
+    // int N;  
+    // cin >> N;
+    // vector<int> v[N];
+    // for (int i = 0; i < N; i++)
+    // {
+    //     int n;
+    //     cin >> n;
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         int x;
+    //         cin >> x;
+    //         v[i].push_back(x); // we are pushing elements in vector. when v[i = 0], v[i = 1], and v[i = 2].
+    //     }
+    // }
+    // cout << "Vectors are: " << endl;
+    // for (int i = 0; i < N; i++)
+    // {
+    //     printVec(v[i]);
+    // }
 
 
 
+
+
+
+
+// Vector of Vectors... 
+        
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     return 0;   
 } 
