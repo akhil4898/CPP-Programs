@@ -16,6 +16,16 @@ void printVec(vector<int> &v){
     cout << endl;
 }
 
+void printMap(map<int, string> &m)
+{
+    cout << m.size() << endl;
+    for(auto &pr : m)
+    {
+        cout << pr.first << " " << pr.second << endl;
+    }
+}
+
+
 int main()
 {
 
@@ -317,7 +327,25 @@ int main()
 // Maps...(ordered maps or simple maps...)
 
     map<int, string> m;
-    
+    m[1] = "Akhil";
+    m[9] = "Rahul";
+    m[2] = "Nikhil";
+    // another way to initialize maps..
+    m.insert({3, "Rohan"});
+    m.insert(make_pair(5, "Mukul"));
+    printMap(m);              // Function call....
+
+    // map<int, string> :: iterator it;
+    // for(it = m.begin(); it != m.end(); it++)
+    // {
+    //     cout << it->first << " " << it->second << endl;
+    // }
+    // cout << "==============================" << endl;
+
+    // for(auto &value : m)
+    // {
+    //     cout << value.first << " " << value.second << endl;
+    // }
     
     
     
