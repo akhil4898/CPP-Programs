@@ -247,16 +247,28 @@ int main()
     // cout << endl;
 
     // // declare vector of pair to iterate elements..
-    vector<pair<int, int> > v_p = {{1,2}, {2,3}, {4,5}};    
-    vector<pair<int,int>> ::iterator it;
-    for ( it = v_p.begin(); it != v_p.end(); it++)
-    {
-        // cout << (*it).first << " " << (*it).second << endl;
-        cout << it->first << " " << it->second << endl;
-        // (*it).first <=> it->first both are same....
-    }
+    // vector<pair<int, int> > v_p = {{1,2}, {2,3}, {4,5}};    
+    // vector<pair<int,int>> ::iterator it;
+    // for ( it = v_p.begin(); it != v_p.end(); it++)
+    // {
+    //     // cout << (*it).first << " " << (*it).second << endl;
+    //     cout << it->first << " " << it->second << endl;
+    //     // (*it).first <=> it->first both are same....
+    // }
     
-
+    // Range based loops...
+    vector<int> v = {2,3,4,5,6,7};
+    for(int &value : v)
+    {
+        value++;
+        // cout << value << " ";
+    }
+    cout << endl;
+     for(int val : v)
+    {
+        cout << val << " ";
+    }
+    cout << endl;
     
 
     
