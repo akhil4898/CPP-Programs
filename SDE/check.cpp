@@ -4,14 +4,13 @@
 
 using namespace std;
 
-void printVec(vector<int> &v){
+void printVec(vector<pair<int, int>> &v){
     cout << "Size: " << v.size() << endl;
     for (int i = 0; i < v.size(); i++)
     {
-        cout << v[i] << " ";
+        cout << v[i].first << " " << v[i].second << endl;
     }
     // v.push_back(5);
-    cout << endl;
 }
 
 int main()
@@ -113,8 +112,7 @@ int main()
 
     // Vector of pair...
 
-    // vector<pair<int, int>> v;
-    vector<int> v = {1, 2, 3};
+    vector<pair<int, int>> v = {{1, 2}, {2, 3},{3, 4}};
 
     printVec(v);
 
