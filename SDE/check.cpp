@@ -235,6 +235,7 @@ int main()
     //     cout << v[i] << " ";
     // }
     // cout << endl;
+
     // // declare Iterator...
     // vector<int> :: iterator it = v.begin();
     // cout << (*(it + 1)) << endl;
@@ -244,12 +245,15 @@ int main()
     //     cout << (*it) << " ";
     // }
     // cout << endl;
+
     // // declare vector of pair to iterate elements..
     vector<pair<int, int> > v_p = {{1,2}, {2,3}, {4,5}};    
     vector<pair<int,int>> ::iterator it;
     for ( it = v_p.begin(); it != v_p.end(); it++)
     {
-        cout << (*it).first << " " << (*it).second << endl;
+        // cout << (*it).first << " " << (*it).second << endl;
+        cout << it->first << " " << it->second << endl;
+        // (*it).first <=> it->first both are same....
     }
     
 
