@@ -284,9 +284,9 @@ int main()
 
     // Auto keyword....
 
-    auto a = 1.230;
-    cout << a << endl;
-    vector<int> v = {1,2,3,4,5,6};
+    // auto a = 1.230;
+    // cout << a << endl;
+    // vector<int> v = {1,2,3,4,5,6};
     // vector<int> :: iterator it;
     // for (it = v.begin(); it != v.end(); it++)
     // {
@@ -295,22 +295,28 @@ int main()
     // cout << endl;
 
     // We also use auto keyword for print vector elements And we don't need to write this statement [ vector<int> :: iterator it; ]....
-    for(auto it = v.begin(); it != v.end(); it++)
-    {
-        cout << (*it) << " ";
-    }
-    cout << endl;
+    // for(auto it = v.begin(); it != v.end(); it++)
+    // {
+    //     cout << (*it) << " ";
+    // }
+    // cout << endl;
 
     // We also use (Auto Range Loop) for print vector elements....
     // Best practice for use with auto keyword...
-    for (auto &value : v)
-    {
-        cout << value << " ";
-    }
-    cout << endl;
+    // for (auto &value : v)
+    // {
+    //     cout << value << " ";
+    // }
+    // cout << endl;
+
+
+
     
 
     
+// Maps...(ordered maps or simple maps...)
+
+    map<int, string> m;
     
     
     
