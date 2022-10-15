@@ -330,7 +330,10 @@ int main()
     m[1] = "Akhil";
     m[9] = "Rahul";
     m[2] = "Nikhil";
-    // another way to initialize maps..
+    m[9] = "Shanti"; // Updated value will be store in same key...
+    // m[6]; //  empty string will inserted in this...
+
+    // Another way to initialize maps..
     m.insert({3, "Rohan"});
     m.insert(make_pair(5, "Mukul"));
     printMap(m);              // Function call....
@@ -348,12 +351,7 @@ int main()
     // }
     
     
-    
-    
-    
-    
-    
-    
+
     
     
     
