@@ -302,6 +302,7 @@ int main()
     cout << endl;
 
     // We also use (Auto Range Loop) for print vector elements....
+    // Best practice for use with auto keyword...
     for (auto &value : v)
     {
         cout << value << " ";
