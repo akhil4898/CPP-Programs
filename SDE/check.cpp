@@ -176,11 +176,15 @@ int main()
     //         v[i].push_back(x); // we are pushing elements in vector. when v[i = 0], v[i = 1], and v[i = 2].
     //     }
     // }
+
+    // v[0].push_back(20);
+    // v[1].push_back(40);
     // cout << "Vectors are: " << endl;
     // for (int i = 0; i < N; i++)
     // {
     //     printVec(v[i]);
     // }
+    // cout << v[0][0] << endl;
 
 
 
@@ -190,8 +194,32 @@ int main()
 
 // Vector of Vectors... 
         
-
-
+    int N;
+    cin >> N;
+    vector<vector<int> > v;
+    for (int i = 0; i < N; i++)
+    {
+        int n;
+        cin >> n;
+        vector<int> temp;
+        // v.push_back(vector<int> ());
+        for (int j = 0; j < n; j++)
+        {
+            int x;
+            cin >> x;
+            temp.push_back(x);
+            // v[i].push_back(x);
+        }
+        v.push_back(temp);        
+    }
+    v[0].push_back(10);
+    v[1].push_back(20);
+    v.push_back(vector<int> ());   // we push_back the empty vector...
+    for (int i = 0; i < v.size(); i++)
+    {
+        printVec(v[i]);
+    }
+    cout << v[0][1] << endl;
 
 
     
