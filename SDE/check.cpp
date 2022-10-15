@@ -7,10 +7,17 @@ using namespace std;
 
 void printVec(vector<int> &v){
     cout << "Size: " << v.size() << endl;
-    for (int i = 0; i < v.size(); i++)
+
+    // for (int i = 0; i < v.size(); i++)
+    // {
+    //     cout << v[i] << " ";
+    //     // cout << v[i].first << " " << v[i].second << endl;
+    // }
+    // // v.push_back(5);
+
+    for(auto &val : v)
     {
-        cout << v[i] << " ";
-        // cout << v[i].first << " " << v[i].second << endl;
+        cout << val << " ";
     }
     // v.push_back(5);
     cout << endl;
@@ -326,7 +333,7 @@ int main()
     
 // Maps...(ordered maps or simple maps...)
 
-    // Time complexity of insertion, find, and accessing the element in map is -> O(log(n)) 
+    // Time complexity of insertion, find, erase, and accessing the element in map is -> O(log(n)) 
     map<int, string> m;
     m[1] = "Akhil";    //TC - > O(log(n))
     m[9] = "Rahul";
@@ -337,20 +344,25 @@ int main()
     // Another way to initialize maps..
     m.insert({3, "Rohan"});
     m.insert(make_pair(5, "Mukul"));
-    printMap(m);              // Function call....
+    // printMap(m);              // Function call....
 
     // map<int, string> :: iterator it;
 
+// Find Operation....
 
-    auto it = m.find(2);     // Always return iterator....
-    if (it == m.end())
-        cout << "No value exist..." << endl;
-    else
-        cout << "Value found.. :)" << endl;
-        cout << it->first << " " << it->second << endl;
+    // auto it = m.find(1);     // Always return iterator (it)....
+    // if (it == m.end())
+    //     cout << "No value exist..." << endl;
+    // else
+    //     cout << "Value found.. :)" << endl;
+    //     cout << it->first << " " << it->second << endl;
 
     
-
+// Erase Operation....
+    auto it = m.find(3);
+    if(it != m.end())
+        m.erase(it);
+    printMap(m);
 
     // map<int, string> :: iterator it;
     // for(it = m.begin(); it != m.end(); it++)
@@ -363,9 +375,6 @@ int main()
     // {
     //     cout << value.first << " " << value.second << endl;
     // }
-    
-    
-
     
     
     
