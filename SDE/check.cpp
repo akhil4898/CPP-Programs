@@ -5,7 +5,7 @@
 using namespace std;
 
 void printVec(vector<int> v){
-    cout << "Size of vector is: " << v.size() << endl;
+    cout << "Size: " << v.size() << endl;
     for (int i = 0; i < v.size(); i++)
     {
         cout << v[i] << " ";
@@ -62,24 +62,31 @@ int main()
 // Vectors
 
 
-    int a[10];   // 10 size array of int type...
-    vector<int> v;   // Currently size is 0. But we can vary its size.
-    int n;
-    cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        int x;
-        cin >> x;
-        v.push_back(x);
-        printVec(v); 
-    }
+    // int a[10];   // 10 size array of int type...
+    // vector<int> v;   // Currently size is 0. But we can vary its size.
+    // int n;
+    // cin >> n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int x;
+    //     cin >> x;
+    //     v.push_back(x);
+    //     printVec(v); 
+    // }
 
-    // int n = 1e5;           // Array size not more than 1e5(10^5) in local or 1e7(10^7) in global.
+
+    // int n = 1e5;           // Vector and Array size not more than 1e5(10^5) in local or 1e7(10^7) in global.
     // int a[n];
     // a[n-1] = 20;                 
     // cout << a[n-1] << endl; 
     
 
-    
+// Directly initialize vector with value of 5.
+    vector<int> v(5, 1);
+    v.push_back(2);
+    v.push_back(3);
+    printVec(v);
+
+
     return 0;
 } 
