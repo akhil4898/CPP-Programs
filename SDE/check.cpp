@@ -27,12 +27,14 @@ int main()
     // p1.first = 10;
     // cout << p1.first << " " << p1.second << endl;
     // cout << p.first << " " << p.second << endl;
-
-
     // pair <int, string> &p2 = p;   // By reference
     // p2.second = "Nikhil";
     // cout << p2.first << " " << p2.second << endl;
     // cout << p.first << " " << p.second << endl << endl;
+
+
+
+
 
 
 // Why we use pair => for maintain relationship between two things.
@@ -41,14 +43,12 @@ int main()
     // int a[] = {1, 2, 3};
     // int b[] = {2, 3, 4};
     // // Here a and b is related to each other....
-
     // pair<int, int> p_array[3];   // Always used vector of array for this....
     // p_array[0] = {1, 2};
     // p_array[1] = {2, 3};
     // p_array[2] = {3, 4};
 
     // swap(p_array[0], p_array[2]);
-
     // // For print this pair array...
     // for (int i = 0; i < 3; i++)
     // {
@@ -56,7 +56,14 @@ int main()
     // }
     
 
+
+
+
 // ===================================================================================================
+
+
+
+
 
 
 // Vectors
@@ -75,11 +82,23 @@ int main()
     // }
 
 
-    // int n = 1e5;           // Vector and Array size not more than 1e5(10^5) in local or 1e7(10^7) in global.
+
+
+
+
+
+// Vector and Array size not more than 1e5(10^5) in local or 1e7(10^7) in global.
+
+    // int n = 1e5;           
     // int a[n];
     // a[n-1] = 20;                 
     // cout << a[n-1] << endl; 
     
+
+
+
+
+
 
 // Directly initialize vector with value of 5.
 
@@ -96,7 +115,10 @@ int main()
 
 
 
-    // We use string for vectors...
+
+
+
+// We use string for vectors...
 
     // vector<string> s1;
     // int n;
@@ -110,23 +132,35 @@ int main()
     // printVec(s1);
 
 
-    // Vector of pair...
+
+
+
+
+// Vector of pair...
 
     // vector<pair<int, int>> v = {{1, 2}, {2, 3},{3, 4}};
+    // vector<pair<int, int>> v;
+    // int n;
+    // cin >> n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int x, y;
+    //     cin >> x >> y;
+    //     // v.push_back(make_pair(x, y));
+    //     v.push_back({x, y});
+    // }
+    // printVec(v);
 
-    vector<pair<int, int>> v;
 
-    int n;
-    cin >> n;
 
-    for (int i = 0; i < n; i++)
-    {
-        int x, y;
-        cin >> x >> y;
-        v.push_back(make_pair(x, y));
-    }
-    
-    printVec(v);
+
+
+
+
+// 
+
+
+
 
     return 0;   
 } 
