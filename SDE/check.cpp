@@ -4,6 +4,16 @@
 
 using namespace std;
 
+void printVec(vector<int> v){
+    cout << "Size of vector is: " << v.size() << endl;
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+    
+}
+
 int main()
 {
 
@@ -63,6 +73,6 @@ int main()
         cin >> x;
         v.push_back(x);
     }
-    
+    printVec(v);
     return 0;
 } 
