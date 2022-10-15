@@ -4,12 +4,13 @@
 
 using namespace std;
 
-void printVec(vector<int> v){
+void printVec(vector<int> &v){
     cout << "Size: " << v.size() << endl;
     for (int i = 0; i < v.size(); i++)
     {
         cout << v[i] << " ";
     }
+    // v.push_back(5);
     cout << endl;
 }
 
@@ -82,11 +83,40 @@ int main()
     
 
 // Directly initialize vector with value of 5.
-    vector<int> v(5, 1);
-    v.push_back(2);
-    v.push_back(3);
-    printVec(v);
 
+    // vector<int> v;
+    // v.push_back(2);
+    // v.push_back(5);
+    // printVec(v);
+    // // v.pop_back();
+    // printVec(v);
+    // vector<int> &v1 = v;    // We use reference here then actual vector will passed to the function not copy.
+    // v1.push_back(10);
+    // printVec(v1);
+    // printVec(v1);
+
+
+
+    // We use string for vectors...
+
+    // vector<string> s1;
+    // int n;
+    // cin >> n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     string x;
+    //     cin >> x;
+    //     s1.push_back(x);
+    // }
+    // printVec(s1);
+
+
+    // Vector of pair...
+
+    // vector<pair<int, int>> v;
+    vector<int> v = {1, 2, 3};
+
+    printVec(v);
 
     return 0;
 } 
