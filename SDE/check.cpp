@@ -23,7 +23,7 @@ void printVec(vector<int> &v){
     cout << endl;
 }
 
-void printMap(map<string, string> &m)
+void printMap(map<string, int> &m)
 {
     cout << "Map size is: " << m.size() << endl;
     for(auto &pr : m)
@@ -361,7 +361,7 @@ int main()
 
     
 
-    
+
 // Erase Operation....
     // auto it = m.find(3);
     // if(it != m.end())
@@ -385,9 +385,21 @@ int main()
 
     // Time complexity of string keys are: 
     // [ s.size( ) * log(n) ]  Here, s is string.size().
-    map<string, string> m;
-    m["Akhil"] = "Lakhan";  // s.size() * log(n)      
-    m["Nikhil"] = "Ram";
+    // map<string, string> m;
+    // m["Akhil"] = "Lakhan";  // s.size() * log(n)      
+    // m["Nikhil"] = "Ram";
+    // printMap(m);
+
+    map<string, int> m;
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        string s;
+        cin >> s;
+        m[s]++;
+    }
+
     printMap(m);
 
     return 0;   
