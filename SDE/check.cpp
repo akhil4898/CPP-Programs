@@ -258,7 +258,7 @@ int main()
     
     // Range based loops...
     vector<int> v = {2,3,4,5,6,7};
-    for(int &value : v)
+    for(int &value : v)     // Always use reference operator for copy vector...
     {
         value++;
         // cout << value << " ";
