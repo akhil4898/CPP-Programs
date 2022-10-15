@@ -1,10 +1,13 @@
-#include <iostream>
+// Pair And Vectors...
+
+#include <bits/stdc++.h>
 
 using namespace std;
 
 int main()
 {
-    int x = 5;
-    cout << "The value of X is: " << x << endl;
+    pair<int, string> p;
+    p = make_pair(2, "Akhil");
+    cout << p.first << " " << p.second << endl;
     return 0;
-}
+} 
