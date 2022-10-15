@@ -74,7 +74,12 @@ int main()
         printVec(v); 
     }
 
+    // int n = 1e5;           // Array size not more than 1e5(10^5) in local or 1e7(10^7) in global.
+    // int a[n];
+    // a[n-1] = 20;                 
+    // cout << a[n-1] << endl; 
     
-    // printVec(v);
+
+    
     return 0;
 } 
