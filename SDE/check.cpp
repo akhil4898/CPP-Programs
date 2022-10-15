@@ -11,7 +11,6 @@ void printVec(vector<int> v){
         cout << v[i] << " ";
     }
     cout << endl;
-    
 }
 
 int main()
@@ -72,7 +71,10 @@ int main()
         int x;
         cin >> x;
         v.push_back(x);
+        printVec(v); 
     }
-    printVec(v);
+
+    
+    // printVec(v);
     return 0;
 } 
