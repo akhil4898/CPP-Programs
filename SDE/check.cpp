@@ -23,7 +23,7 @@ void printVec(vector<int> &v){
     cout << endl;
 }
 
-void printMap(map<int, string> &m)
+void printMap(map<string, string> &m)
 {
     cout << "Map size is: " << m.size() << endl;
     for(auto &pr : m)
@@ -334,16 +334,16 @@ int main()
 // Maps...(ordered maps or simple maps...)
 
     // Time complexity of insertion, find, erase, and accessing the element in map is -> O(log(n)) 
-    map<int, string> m;
-    m[1] = "Akhil";    //TC - > O(log(n))
-    m[9] = "Rahul";
-    m[2] = "Nikhil";
-    m[9] = "Shanti"; // Updated value will be store in same key...
-    // m[6]; //  empty string will inserted in this...
+    // map<int, string> m;
+    // m[1] = "Akhil";    //TC - > O(log(n))
+    // m[9] = "Rahul";
+    // m[2] = "Nikhil";
+    // m[9] = "Shanti"; // Updated value will be store in same key...
+    // // m[6]; //  empty string will inserted in this...
 
-    // Another way to initialize maps..
-    m.insert({3, "Rohan"});
-    m.insert(make_pair(5, "Mukul"));
+    // // Another way to initialize maps..
+    // m.insert({3, "Rohan"});
+    // m.insert(make_pair(5, "Mukul"));
     // printMap(m);              // Function call....
 
     // map<int, string> :: iterator it;
@@ -363,8 +363,8 @@ int main()
     // if(it != m.end())
     //     m.erase(it);
     // printMap(m);
-    m.clear();
-    printMap(m);
+    // m.clear();
+    // printMap(m);
 
     // map<int, string> :: iterator it;
     // for(it = m.begin(); it != m.end(); it++)
@@ -378,8 +378,13 @@ int main()
     //     cout << value.first << " " << value.second << endl;
     // }
     
-    
-    
+
+    // Time complexity of string keys are: 
+    // [ s.size( ) * log(n) ]  Here, s is string.size().
+    map<string, string> m;
+    m["Akhil"] = "Lakhan";  // s.size() * log(n)      
+    m["Nikhil"] = "Ram";
+    printMap(m);
 
     return 0;   
 } 
