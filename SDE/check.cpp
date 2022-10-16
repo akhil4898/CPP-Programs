@@ -40,7 +40,7 @@ void printMap(map<string, int> &m)
 
 
 
-void printUnorderedMap(unordered_map<int, string> &m)
+void printUnorderedMap(unordered_map<string, int> &m)
 {
     cout << "Size of Unordered map is: " << m.size() << endl;
     for(auto &val : m)
@@ -432,17 +432,17 @@ int main()
 // Unordered Maps....
 // Time complexity of unordered map of insertion, find, erase, and Accessing is: O(1).
 
-    unordered_map<int, string> m;
-    m[9] = "Sohan";   //O(1)
-    m[1] = "Akhil";
-    m[5] = "Mohan";
-    m.insert({3, "Lakhan"});
-    m[5] = "Rohan";
+    unordered_map<string, int> m;
+    // m[9] = "Sohan";   //O(1)
+    // m[1] = "Akhil";
+    // m[5] = "Mohan";
+    // m.insert({3, "Lakhan"});
+    // m[5] = "Rohan";
     // for(auto &val : m)
     // {
     //     cout << val.first << " " << val.second << endl;
     // }
-    printUnorderedMap(m);
+    // printUnorderedMap(m);
 
 
 
@@ -470,6 +470,24 @@ int main()
     // printUnorderedMap(m);
     
 
+    int N;
+    cin >> N;
+    for (int i = 0; i < N; i++)   // For cal frequency..
+    {
+        string s;
+        cin >> s;
+        m[s]++;
+    }
+    int q;
+    cin >> q;
+    // for(int i = q; i > 0; i--)
+    while(q--)
+    {
+        string s;
+        cin >> s;
+        cout << m[s] << endl;
+    }
+    // printUnorderedMap(m);
 
 
 
