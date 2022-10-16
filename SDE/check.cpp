@@ -430,9 +430,10 @@ int main()
 
 
 // Unordered Maps....
+// Time complexity of unordered map of insertion, find, erase, and Accessing is: O(1).
 
     unordered_map<int, string> m;
-    m[9] = "Sohan";
+    m[9] = "Sohan";   //O(1)
     m[1] = "Akhil";
     m[5] = "Mohan";
     m.insert({3, "Lakhan"});
@@ -441,6 +442,16 @@ int main()
     // {
     //     cout << val.first << " " << val.second << endl;
     // }
+    auto it = m.find(10);
+    if(it == m.end())
+    {
+        cout << "Value not found..." << endl;
+    }
+    else
+    {
+        cout << "Value found..." <<  endl;
+        cout << (*it).first << " " << it->second << endl;
+    }
     printUnorderedMap(m);
 
 
