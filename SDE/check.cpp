@@ -432,8 +432,11 @@ int main()
 // Unordered Maps....
 
     unordered_map<int, string> m;
+    m[9] = "Sohan";
     m[1] = "Akhil";
+    m[5] = "Mohan";
     m.insert({3, "Lakhan"});
+    m[5] = "Rohan";
     // for(auto &val : m)
     // {
     //     cout << val.first << " " << val.second << endl;
