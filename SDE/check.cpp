@@ -442,17 +442,33 @@ int main()
     // {
     //     cout << val.first << " " << val.second << endl;
     // }
-    auto it = m.find(10);
-    if(it == m.end())
-    {
-        cout << "Value not found..." << endl;
-    }
-    else
-    {
-        cout << "Value found..." <<  endl;
-        cout << (*it).first << " " << it->second << endl;
-    }
     printUnorderedMap(m);
+
+
+
+// Find operation in unordered map...
+    // auto it = m.find(1);
+    // if(it == m.end())
+    // {
+    //     cout << "Value not found..." << endl;
+    // }
+    // else
+    // {
+    //     cout << "Value found..." <<  endl;
+    //     cout << (*it).first << " " << it->second << endl;
+    // }
+    // printUnorderedMap(m);
+
+
+
+
+// Erase Operation in Unordered map...
+    // if(it != m.end())
+    //     m.erase(it);
+    // else 
+    //     cout << "Value not found..." << endl;
+    // printUnorderedMap(m);
+    
 
 
 
