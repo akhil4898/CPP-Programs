@@ -40,6 +40,15 @@ void printMap(map<string, int> &m)
 
 
 
+void printUnorderedMap(unordered_map<int, string> &m)
+{
+    cout << "Size of Unordered map is: " << m.size() << endl;
+    for(auto &val : m)
+    {
+        cout << val.first << " " << val.second << endl;
+    }
+}
+
 
 int main()
 {
@@ -422,7 +431,15 @@ int main()
 
 // Unordered Maps....
 
-    
+    unordered_map<int, string> m;
+    m[1] = "Akhil";
+    m.insert({3, "Lakhan"});
+    // for(auto &val : m)
+    // {
+    //     cout << val.first << " " << val.second << endl;
+    // }
+    printUnorderedMap(m);
+
 
 
 
