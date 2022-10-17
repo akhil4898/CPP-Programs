@@ -474,7 +474,7 @@ int main()
 
 
 
-// Print strings with their frequency...
+// Print strings with their frequency without lexiographical order...
 
     int N;
     cin >> N;
@@ -493,13 +493,6 @@ int main()
         cout << m[s] << endl;
     }
     printUnorderedMap(m);
-
-
-
-
-
-
-
 
 
     return 0;   
