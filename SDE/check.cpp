@@ -470,9 +470,15 @@ int main()
     // printUnorderedMap(m);
     
 
+
+
+
+
+// Print strings with their frequency...
+
     int N;
     cin >> N;
-    for (int i = 0; i < N; i++)   // For cal frequency..
+    for (int i = 0; i < N; i++)   // For calculate frequency..
     {
         string s;
         cin >> s;
@@ -487,6 +493,9 @@ int main()
         cout << m[s] << endl;
     }
     printUnorderedMap(m);
+
+
+
 
 
 
