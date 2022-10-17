@@ -480,14 +480,13 @@ int main()
     }
     int q;
     cin >> q;
-    // for(int i = q; i > 0; i--)
     while(q--)
     {
         string s;
         cin >> s;
         cout << m[s] << endl;
     }
-    // printUnorderedMap(m);
+    printUnorderedMap(m);
 
 
 
