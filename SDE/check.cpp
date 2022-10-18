@@ -484,7 +484,7 @@ int main()
 // Unordered Maps....
 // Time complexity of unordered map of insertion, find, erase, and Accessing is: O(1).
 
-    // unordered_map<string, int> m;
+    // unordered_map<int, string> m;
     // m[9] = "Sohan";   //O(1)
     // m[1] = "Akhil";
     // m[5] = "Mohan";
@@ -494,10 +494,12 @@ int main()
     // {
     //     cout << val.first << " " << val.second << endl;
     // }
-    // printUnorderedMap(m);
+    // // printUnorderedMap(m);
 
 
 
+
+ 
 // Find operation in unordered map...
     // auto it = m.find(1);
     // if(it == m.end())
@@ -515,10 +517,14 @@ int main()
 
 
 // Erase Operation in Unordered map...
-    // if(it != m.end())
+    // if(it != m.end()){
+    //     cout << "Element erased..." << it->first << " " << it->second << endl;
     //     m.erase(it);
-    // else 
+    // }
+    // else
+    // { 
     //     cout << "Value not found..." << endl;
+    // }
     // printUnorderedMap(m);
     
 
@@ -528,23 +534,28 @@ int main()
 
 // Print strings with their frequency without lexiographical order...
 
-    // int N;
-    // cin >> N;
-    // for (int i = 0; i < N; i++)   // For calculate frequency..
-    // {
-    //     string s;
-    //     cin >> s;
-    //     m[s]++;
-    // }
-    // int q;
-    // cin >> q;
-    // while(q--)
-    // {
-    //     string s;
-    //     cin >> s;
-    //     cout << m[s] << endl;
-    // }
+    unordered_map<string, int> m;
+    int N;
+    cin >> N;
+    for (int i = 0; i < N; i++)   // For calculate frequency..
+    {
+        string s;
+        cin >> s;
+        m[s]++;                 //  Calculate the frequency of string... 
+    }
+    int q;
+    cin >> q;
+    while(q--)
+    {
+        string s;
+        cin >> s;
+        cout << m[s] << endl;
+    }
     // printUnorderedMap(m);
+
+
+
+
 
 
     return 0;   
