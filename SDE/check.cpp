@@ -165,7 +165,7 @@ int main()
     v.push_back(2);         // push_back() is used to insert the element in vector...
     v.push_back(5);
     printVec(v);
-    // v.pop_back();        
+    // v.pop_back();        // pop_back() is used to delete or remove the element from vector...
     printVec(v);
     vector<int> &v1 = v;    // We use reference here then actual vector will passed to the function not copy.
     v1.push_back(10);
