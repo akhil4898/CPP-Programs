@@ -162,15 +162,15 @@ int main()
 // Directly initialize vector with value of 5.
 
     vector<int> v;
-    v.push_back(2);         // push_back() is used to insert the element in vector...
+    v.push_back(2);         // push_back() is used to insert the element in the end of vector...
     v.push_back(5);
     printVec(v);
-    // v.pop_back();        // pop_back() is used to delete or remove the element from vector...
-    printVec(v);
-    vector<int> &v1 = v;    // We use reference here then actual vector will passed to the function not copy.
+    // v.pop_back();        // pop_back() is used to delete or remove the element from the end in vector...
+    // printVec(v);
+    vector<int> &v1 = v;    // We use reference here... then actual vector will passed to the function not copy.
     v1.push_back(10);
     printVec(v1);
-    printVec(v1);
+    // printVec(v1);
 
 
 
