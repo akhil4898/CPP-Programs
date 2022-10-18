@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-void printVec(vector<int> &v){
+void printVec(vector<string> &v){
     cout << "Size: " << v.size() << endl;
 
     // for (int i = 0; i < v.size(); i++)
