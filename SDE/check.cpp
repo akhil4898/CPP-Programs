@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-void printVec(vector<pair<int, int>> &v){
+void printVec(vector<int> &v){
     cout << "Size: " << v.size() << endl;
 
     // for (int i = 0; i < v.size(); i++)
@@ -18,10 +18,10 @@ void printVec(vector<pair<int, int>> &v){
 
     for(auto &val : v)
     {
-        cout << val.first << " " << val.second << endl;
+        cout << val << " ";
     }
     // v.push_back(5);
-    // cout << endl;
+    cout << endl;
 }
 
 
@@ -201,17 +201,17 @@ int main()
 // Vector of pair...
 
     // vector<pair<int, int>> v = {{1, 2}, {2, 3},{3, 4}};
-    vector<pair<int, int>> v;
-    int n;
-    cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        int x, y;
-        cin >> x >> y;
-        // v.push_back(make_pair(x, y));
-        v.push_back({x, y});
-    }
-    printVec(v);
+    // vector<pair<int, int>> v;
+    // int n;
+    // cin >> n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int x, y;
+    //     cin >> x >> y;
+    //     // v.push_back(make_pair(x, y));
+    //     v.push_back({x, y});
+    // }
+    // printVec(v);
 
 
 
@@ -221,29 +221,29 @@ int main()
 
 // Array of vectors   v\s   Vector of Vectors...
 
-    // int N;  
-    // cin >> N;
-    // vector<int> v[N];
-    // for (int i = 0; i < N; i++)
-    // {
-    //     int n;
-    //     cin >> n;
-    //     for (int j = 0; j < n; j++)
-    //     {
-    //         int x;
-    //         cin >> x;
-    //         v[i].push_back(x); // we are pushing elements in vector. when v[i = 0], v[i = 1], and v[i = 2].
-    //     }
-    // }
+    int N;  
+    cin >> N;
+    vector<int> v[N];
+    for (int i = 0; i < N; i++)
+    {
+        int n;
+        cin >> n;
+        for (int j = 0; j < n; j++)
+        {
+            int x;
+            cin >> x;
+            v[i].push_back(x); // we are pushing elements in vector. when v[i = 0], v[i = 1], and v[i = 2].
+        }
+    }
 
-    // v[0].push_back(20);
-    // v[1].push_back(40);
-    // cout << "Vectors are: " << endl;
-    // for (int i = 0; i < N; i++)
-    // {
-    //     printVec(v[i]);
-    // }
-    // cout << v[0][0] << endl;
+    v[0].push_back(20);
+    v[1].push_back(40);
+    cout << "Vectors are: " << endl;
+    for (int i = 0; i < N; i++)
+    {
+        printVec(v[i]);
+    }
+    cout << v[0][0] << endl;
 
 
 
