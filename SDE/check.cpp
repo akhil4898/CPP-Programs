@@ -598,5 +598,27 @@ int main()
     
 
 
+
+// assigning the elements from s1 to s2
+
+    // set<int> s2 = s;
+    set<int> s2(s.begin(), s.end());
+    cout << "Size of Set is: " << s.size() << endl; 
+    for (auto& i : s2)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+
+
+
+
+
+
+
+
+
+
+
     return 0;   
 } 
