@@ -70,8 +70,15 @@ int main()
     // cout << p.first << " " << p.second << endl << endl;
 
 
+    
 
-
+    pair<string, string> sp[3];
+    sp[0] = {"Akhil", "Upadhyay"};
+    sp[1] = make_pair("Nikhil", "Upadhyay");
+    sp[2] = {"lakhan", "Upadhyay"};
+    for(auto &i: sp){
+        cout << i.first << " " << i.second << endl;
+    }
 
 
 // Why we use pair => for maintain relationship between two things.
@@ -432,7 +439,7 @@ int main()
 // Unordered Maps....
 // Time complexity of unordered map of insertion, find, erase, and Accessing is: O(1).
 
-    unordered_map<string, int> m;
+    // unordered_map<string, int> m;
     // m[9] = "Sohan";   //O(1)
     // m[1] = "Akhil";
     // m[5] = "Mohan";
@@ -476,23 +483,23 @@ int main()
 
 // Print strings with their frequency without lexiographical order...
 
-    int N;
-    cin >> N;
-    for (int i = 0; i < N; i++)   // For calculate frequency..
-    {
-        string s;
-        cin >> s;
-        m[s]++;
-    }
-    int q;
-    cin >> q;
-    while(q--)
-    {
-        string s;
-        cin >> s;
-        cout << m[s] << endl;
-    }
-    printUnorderedMap(m);
+    // int N;
+    // cin >> N;
+    // for (int i = 0; i < N; i++)   // For calculate frequency..
+    // {
+    //     string s;
+    //     cin >> s;
+    //     m[s]++;
+    // }
+    // int q;
+    // cin >> q;
+    // while(q--)
+    // {
+    //     string s;
+    //     cin >> s;
+    //     cout << m[s] << endl;
+    // }
+    // printUnorderedMap(m);
 
 
     return 0;   
