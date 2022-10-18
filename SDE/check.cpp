@@ -558,5 +558,34 @@ int main()
 
 
 
+
+
+// ===================================================================================================
+
+
+
+
+
+
+
+// Multimap: Multimap is similar to a map with the addition that multiple elements can have the same keys. One important thing to note about multimap is that multimap keeps all the keys in sorted order always. These properties of multimap make it very much useful in competitive programming.
+
+
+
+
+
+// ===================================================================================================
+
+
+
+
+
+
+
+// Sets
+
+    set<int> s = {1,2,3,4};
+    
+
     return 0;   
 } 
