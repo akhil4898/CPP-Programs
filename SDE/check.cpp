@@ -74,26 +74,26 @@ int main()
     // sp[0] = {"Akhil", "Upadhyay"};
     // sp[1] = make_pair("Nikhil", "Upadhyay");
     // sp[2] = {"lakhan", "Upadhyay"};
-    int n;
-    cout << "Enter the number of elements you want: " << endl;
-    cin >> n;
-    pair<string, string> sp[n];
-    for (int i = 0; i < n; i++)
-    {
-        string s1, s2;
-        cout << "Enter First string: ";
-        cin >> s1;
-        cout << "Enter Second string: ";
-        cin >> s2;
-        // sp[i] = make_pair(s1, s2);
-        sp[i] = {s1, s2};
-        cout << endl;   
-    }
+    // int n;
+    // cout << "Enter the number of elements you want: " << endl;
+    // cin >> n;
+    // pair<string, string> sp[n];
+    // for (int i = 0; i < n; i++)
+    // {
+    //     string s1, s2;
+    //     cout << "Enter First string: ";
+    //     cin >> s1;
+    //     cout << "Enter Second string: ";
+    //     cin >> s2;
+    //     // sp[i] = make_pair(s1, s2);
+    //     sp[i] = {s1, s2};
+    //     cout << endl;   
+    // }
 
-    swap(sp[0], sp[1]);
-    for(auto i: sp){
-        cout << i.first << " " << i.second << endl;
-    }
+    // swap(sp[0], sp[1]);
+    // for(auto i: sp){
+    //     cout << i.first << " " << i.second << endl;
+    // }
 
 
 // Why we use pair => for maintain relationship between two things.
@@ -129,17 +129,17 @@ int main()
 
 
     // int a[10];   // 10 size array of int type...
-    // vector<int> v;   // Currently size is 0. But we can vary its size.
-    // int n;
-    // cin >> n;
-    // for (int i = 0; i < n; i++)
-    // {
-    //     int x;
-    //     cin >> x;
-    //     v.push_back(x);
-    //     printVec(v); 
-    // }
-
+    vector<int> v;   // Currently size is 0. But we can vary its size.
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        int x;
+        cin >> x;
+        v.push_back(x);
+        printVec(v); 
+    }
+   
 
 
 
