@@ -73,9 +73,20 @@ int main()
     
 
     pair<string, string> sp[3];
-    sp[0] = {"Akhil", "Upadhyay"};
-    sp[1] = make_pair("Nikhil", "Upadhyay");
-    sp[2] = {"lakhan", "Upadhyay"};
+    // sp[0] = {"Akhil", "Upadhyay"};
+    // sp[1] = make_pair("Nikhil", "Upadhyay");
+    // sp[2] = {"lakhan", "Upadhyay"};
+    int n;
+    cout << "Enter the number of elements you want: " << endl;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        string s1, s2;
+        cout << "Enter First string: ";
+        cin >> s1;
+        cout << "Enter Second string: ";
+        cin >> s2;
+    }
     for(auto &i: sp){
         cout << i.first << " " << i.second << endl;
     }
