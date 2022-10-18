@@ -90,6 +90,7 @@ int main()
         cout << endl;   
     }
 
+    swap(sp[0], sp[1]);
     for(auto i: sp){
         cout << i.first << " " << i.second << endl;
     }
