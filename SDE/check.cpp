@@ -534,24 +534,24 @@ int main()
 
 // Print strings with their frequency without lexiographical order...
 
-    unordered_map<string, int> m;
-    int N;
-    cin >> N;
-    for (int i = 0; i < N; i++)   // For calculate frequency..
-    {
-        string s;
-        cin >> s;
-        m[s]++;                 //  Calculate the frequency of string... 
-    }
-    int q;
-    cin >> q;
-    while(q--)
-    {
-        string s;
-        cin >> s;
-        cout << m[s] << endl;
-    }
-    // printUnorderedMap(m);
+    // unordered_map<string, int> m;
+    // int N;
+    // cin >> N;
+    // for (int i = 0; i < N; i++)   // For calculate frequency..
+    // {
+    //     string s;
+    //     cin >> s;
+    //     m[s]++;                 //  Calculate the frequency of string... 
+    // }
+    // int q;
+    // cin >> q;
+    // while(q--)
+    // {
+    //     string s;
+    //     cin >> s;
+    //     cout << m[s] << endl;
+    // }
+    // // printUnorderedMap(m);
 
 
 
@@ -567,8 +567,9 @@ int main()
 
 
 
+// Multimap: 
 
-// Multimap: Multimap is similar to a map with the addition that multiple elements can have the same keys. One important thing to note about multimap is that multimap keeps all the keys in sorted order always. These properties of multimap make it very much useful in competitive programming.
+// Multimap is similar to a map with the addition that multiple elements can have the same keys. One important thing to note about multimap is   that multimap keeps all the keys in sorted order always. These properties of multimap make it very much useful in competitive programming.
 
 
 
@@ -584,8 +585,18 @@ int main()
 
 // Sets
 
-    set<int> s = {1,2,3,4};
+    set<int> s = {5,4,3,2,5};
+    // s.insert(1);
+    // s.insert(2);
+    // s.insert(3);
+    cout << "Size of Set is: " << s.size() << endl; 
+    for (auto& i : s)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
     
+
 
     return 0;   
 } 
