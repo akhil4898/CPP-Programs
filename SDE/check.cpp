@@ -2,7 +2,7 @@
 
 #include <bits/stdc++.h>
 
-using namespace std;
+using namespace std;    
 
 
 
@@ -129,16 +129,16 @@ int main()
 
 
     // int a[10];   // 10 size array of int type...
-    vector<int> v;   // Currently size is 0. But we can vary its size.
-    int n;
-    cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        int x;
-        cin >> x;
-        v.push_back(x);
-        printVec(v); 
-    }
+    // vector<int> v;   // Currently size is 0. But we can vary its size.
+    // int n;
+    // cin >> n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int x;
+    //     cin >> x;
+    //     v.push_back(x);
+    //     printVec(v); 
+    // }
    
 
 
@@ -161,16 +161,16 @@ int main()
 
 // Directly initialize vector with value of 5.
 
-    // vector<int> v;
-    // v.push_back(2);
-    // v.push_back(5);
-    // printVec(v);
-    // // v.pop_back();
-    // printVec(v);
-    // vector<int> &v1 = v;    // We use reference here then actual vector will passed to the function not copy.
-    // v1.push_back(10);
-    // printVec(v1);
-    // printVec(v1);
+    vector<int> v;
+    v.push_back(2);         // push_back() is used to insert the element in vector...
+    v.push_back(5);
+    printVec(v);
+    // v.pop_back();        
+    printVec(v);
+    vector<int> &v1 = v;    // We use reference here then actual vector will passed to the function not copy.
+    v1.push_back(10);
+    printVec(v1);
+    printVec(v1);
 
 
 
