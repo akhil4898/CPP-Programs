@@ -283,21 +283,27 @@ int main()
 
 
 
+// ===================================================================================================
+
+
+
 
 
 // Iterations...
 
 
-    // vector<int> v = {2, 3, 4, 5, 6, 7};
-    // for (int i = 0; i < v.size(); i++)
-    // {
-    //     cout << v[i] << " ";
-    // }
-    // cout << endl;
+    vector<int> v = {2, 3, 4, 5, 6, 7};
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout << v[i] << " ";
+    }
+    cout << endl;
 
 
 
-    // // declare Iterator...
+
+//  declare Iterator...
+   
     // vector<int> :: iterator it = v.begin();
     // cout << (*(it + 1)) << endl;
     // // print elements using iterator...
@@ -310,7 +316,9 @@ int main()
 
 
 
-    // // declare vector of pair to iterate elements..
+
+// // declare vector of pair to iterate elements..
+
     // vector<pair<int, int> > v_p = {{1,2}, {2,3}, {4,5}};    
     // vector<pair<int,int>> ::iterator it;
     // for ( it = v_p.begin(); it != v_p.end(); it++)
@@ -323,7 +331,8 @@ int main()
 
 
 
-    // Range based loops...
+// Range based loops...
+
     // vector<int> v = {2,3,4,5,6,7};
     // for(int &value : v)     // Always use reference operator for actual vector not copy of vector...
     // {
@@ -332,7 +341,10 @@ int main()
     // }
     // cout << endl;
 
-    // Pair
+
+
+
+// Pair
 
     // vector<pair<int, int>> v_p = {{1,2}, {2,3}, {3,4}};
     // for(pair<int, int> &value : v_p)
@@ -341,8 +353,9 @@ int main()
     // }
     
 
-    // Auto keyword....
 
+
+// Auto keyword....
     // auto a = 1.230;
     // cout << a << endl;
     // vector<int> v = {1,2,3,4,5,6};
@@ -372,6 +385,11 @@ int main()
 
     
 
+// ===================================================================================================
+
+
+
+
     
 // Maps...(ordered maps or simple maps...)
 
@@ -389,6 +407,7 @@ int main()
     // printMap(m);              // Function call....
 
     // map<int, string> :: iterator it;
+
 
 
 
@@ -448,6 +467,12 @@ int main()
     // }
     // printMap(m); 
 
+
+
+
+
+
+// ===================================================================================================
 
 
 
