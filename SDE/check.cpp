@@ -445,12 +445,12 @@ int main()
     // }
     
 
-    // Time complexity of string keys are: 
-    // [ s.size( ) * log(n) ]  Here, s is string.size().
-    // map<string, string> m;
-    // m["Akhil"] = "Lakhan";  // s.size() * log(n)      
-    // m["Nikhil"] = "Ram";
-    // printMap(m);
+// // Time complexity of string keys are: 
+//     // [ s.size( ) * log(n) ]  Here, s is string.size().
+//     map<string, string> m;
+//     m["Akhil"] = "Lakhan";  // s.size() * log(n)      
+//     m["Nikhil"] = "Ram";
+//     printMap(m);
 
 
 
@@ -464,7 +464,8 @@ int main()
     // {
     //     string s;
     //     cin >> s;
-    //     m[s]++;
+    //     // m[s]++;
+    //     m.insert({s, m[s]++});
     // }
     // printMap(m); 
 
