@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-void printVec(vector<string> &v){
+void printVec(vector<pair<int, int>> &v){
     cout << "Size: " << v.size() << endl;
 
     // for (int i = 0; i < v.size(); i++)
@@ -18,10 +18,10 @@ void printVec(vector<string> &v){
 
     for(auto &val : v)
     {
-        cout << val << " ";
+        cout << val.first << " " << val.second << endl;
     }
     // v.push_back(5);
-    cout << endl;
+    // cout << endl;
 }
 
 
@@ -200,7 +200,7 @@ int main()
 
 // Vector of pair...
 
-    vector<pair<int, int>> v = {{1, 2}, {2, 3},{3, 4}};
+    // vector<pair<int, int>> v = {{1, 2}, {2, 3},{3, 4}};
     vector<pair<int, int>> v;
     int n;
     cin >> n;
