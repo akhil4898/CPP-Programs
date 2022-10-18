@@ -271,14 +271,14 @@ int main()
     //     }
     //     v.push_back(temp);        
     // }
-    // v[0].push_back(10);
-    // v[1].push_back(20);
+    // // v[0].push_back(10);
+    // // v[1].push_back(20);
     // v.push_back(vector<int> ());   // we push_back the empty vector...
     // for (int i = 0; i < v.size(); i++)
     // {
     //     printVec(v[i]);
     // }
-    // cout << v[0][1] << endl;
+    // // cout << v[0][1] << endl;
 
 
 
