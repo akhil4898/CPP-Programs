@@ -333,13 +333,14 @@ int main()
 
 // Range based loops...
 
-    // vector<int> v = {2,3,4,5,6,7};
-    // for(int &value : v)     // Always use reference operator for actual vector not copy of vector...
-    // {
-    //     // value++;
-    //     cout << value << " ";
-    // }
-    // cout << endl;
+    vector<string> v = {"Akhil", "Nikhil", "Rahul", "Mohan", "Rohan"};
+    for(string value : v)     // Always use reference operator for actual vector not copy of vector...
+    {
+        // value++;
+        cout << value << " ";
+    }
+
+    cout << endl;
 
 
 
