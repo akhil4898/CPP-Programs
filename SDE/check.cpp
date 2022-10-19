@@ -610,6 +610,7 @@ int main()
     // set<int> s2 = s;
     set<int> s2(s.begin(), s.end());
     cout << "Size of Set is: " << s.size() << endl; 
+    s2.erase(5);
     for (auto& i : s2)
     {
         cout << i << " ";
