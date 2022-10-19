@@ -587,41 +587,61 @@ int main()
 // Time complexity of Sets when insertion, find, erase, and Accessing is: log(n)...
 
 
-    set<int> s = {5,4,3,2,5};
-    // s.insert(1);                     // log(n)...
-    // s.insert(2);
-    // s.insert(3);
-    cout << "Size of Set is: " << s.size() << endl; 
-    auto it = s.find(4);                 // log(n)...
-    if(it != s.end())   
-        cout << *it << endl;
-    s.erase(it);
-    for (auto& i : s)
-    {
-        cout << i << " ";
-    }
-    cout << endl;
+    // set<int> s = {5,4,3,2,5};
+    // // s.insert(1);                     // log(n)...
+    // // s.insert(2);
+    // // s.insert(3);
+    // cout << "Size of Set is: " << s.size() << endl; 
+    // auto it = s.find(4);                 // log(n)...
+    // if(it != s.end())   
+    //     cout << *it << endl;
+    // s.erase(it);
+    // for (auto& i : s)
+    // {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
     
 
 
 
 // assigning the elements from s1 to s2
 
-    // set<int> s2 = s;
-    set<int> s2(s.begin(), s.end());
-    cout << "Size of Set is: " << s.size() << endl; 
-    s2.erase(5);
-    for (auto& i : s2)
+    // // set<int> s2 = s;
+    // set<int> s2(s.begin(), s.end());
+    // cout << "Size of Set is: " << s.size() << endl; 
+    // s2.erase(5);
+    // for (auto& i : s2)
+    // {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
+
+
+
+
+
+// Print unique strings in lexiographical order...
+
+    set<string> s;
+    cout << "Enter number of strings you want: ";
+    int N;
+    cin >> N;
+    cout << "Enter strings: ";
+    for (int i = 0; i < N; i++)
     {
-        cout << i << " ";
+        string x;
+        cin >> x;
+        s.insert(x);
+    }
+    cout << "Size is: " << s.size() << endl;
+    cout << "Sets elements are: " << endl;
+    for(auto &key : s)
+    {
+        cout << key << " ";
     }
     cout << endl;
-
-
-
-
-
-
+    
 
 
 
