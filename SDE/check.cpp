@@ -584,12 +584,18 @@ int main()
 
 
 // Sets
+// Time complexity of Sets when insertion, find, erase, and Accessing is: log(n)...
+
 
     set<int> s = {5,4,3,2,5};
-    // s.insert(1);
+    // s.insert(1);                     // log(n)...
     // s.insert(2);
     // s.insert(3);
     cout << "Size of Set is: " << s.size() << endl; 
+    auto it = s.find(4);                 // log(n)...
+    if(it != s.end())   
+        cout << *it << endl;
+    s.erase(it);
     for (auto& i : s)
     {
         cout << i << " ";
