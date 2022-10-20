@@ -696,13 +696,21 @@ int main()
     }
     cout << endl;
     cout << "Enter string which you want to check: ";
-    string q;
+    int q;
     cin >> q;
-    auto it = s.find(q);
-    if(it != s.end())
-        cout << "Yes... String is present in set..." << endl;
-    else    
-        cout << "No... String is not present in set..." << endl;
+    while (q--)
+    {
+    string st;
+    cin >> st;
+   
+        auto it = s.find(st);
+        if(it != s.end())
+            cout << "Yes... String is present in set..." << endl;
+        else    
+            cout << "No... String is not present in set..." << endl;
+
+    }
+    
     
     
 
