@@ -650,28 +650,57 @@ int main()
 // Unordered sets...
 // Time complexity of Unordered_Sets when insertion, find, erase, and Accessing is: O(1)...
 
-    unordered_set<int> s;
-    s.insert(2);            // O(1)....
-    s.insert(3);
-    s.insert(1);
-    cout << "Size of unordered set is: " << s.size() << endl;
-    auto it = s.find(1);
-    if(it != s.end()){
-        cout << "Value find..." << *it << endl;
-        cout << "Erasing this value... " << endl;
-        s.erase(it); 
-    }
-    else
-        cout << "Value not found... " << endl;
+    // unordered_set<int> s;
+    // s.insert(2);            // O(1)....
+    // s.insert(3);
+    // s.insert(1);
+    // cout << "Size of unordered set is: " << s.size() << endl;
+    // auto it = s.find(1);
+    // if(it != s.end()){
+    //     cout << "Value find..." << *it << endl;
+    //     cout << "Erasing this value... " << endl;
+    //     s.erase(it); 
+    // }
+    // else
+    //     cout << "Value not found... " << endl;
     
-    cout << "Size of unordered set is: " << s.size() << endl;
-    for(auto &i : s)
-    {
-        cout << i << " ";
-    }
-    cout << endl;
+    // cout << "Size of unordered set is: " << s.size() << endl;
+    // for(auto &i : s)
+    // {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
     
 
+
+
+    int N;
+    cout << "Enter number of strings: ";
+    cin >> N;
+    unordered_set<string> s;
+    cout << "Enter strings one by one...";
+    for (int i = 0; i < N; i++)
+    {
+        string x;
+        cin >> x;
+        s.insert(x);
+    }
+    cout << "Size of set is: " << s.size() << endl;
+    for(auto &key : s)
+    {
+        cout << key << " ";
+    }
+    cout << endl;
+    cout << "Enter string which you want to check: ";
+    string q;
+    cin >> q;
+    auto it = s.find(q);
+    if(it != s.end())
+        cout << "Yes... String is present in set..." << endl;
+    else    
+        cout << "No... String is not present in set..." << endl;
+    
+    
 
 
 
