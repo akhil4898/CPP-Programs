@@ -679,7 +679,7 @@ int main()
 
 // Print Yes, if string is present in set or print No, if string is not present in set...
     int N;
-    cout << "Enter number of strings: ";
+    cout << "Enter number of strings: ";                                                          
     cin >> N;
     unordered_set<string> s;
     cout << "Enter strings one by one...";
