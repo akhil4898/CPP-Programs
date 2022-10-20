@@ -394,6 +394,8 @@ int main()
     
 // Maps...(ordered maps or simple maps...)
 
+// We can take complex DS ex: (Set<pair<int,int>>, set<set<int>> map<pair<int, string>>).... Beacause internal implementaion using (Red Black Tree).....
+
     // Time complexity of insertion, find, erase, and accessing the element in map is -> O(log(n)) 
     // map<int, string> m;
     // m[1] = "Akhil";    //TC - > O(log(n))
@@ -481,8 +483,10 @@ int main()
 
 
 
-// Unordered Maps....
+// Unordered Maps....(Internal implemnetaions using hash tables...)
 // Time complexity of unordered map of insertion, find, erase, and Accessing is: O(1).
+
+// We cannot take complex Data Structures ex: (unordered_Set<pair<int,int>>, unordered_set<set<int>>, unordered_map<map<int, string>>).... Beacause Hash function inbuilt are not defined in c++...  
 
     // unordered_map<int, string> m;
     // m[9] = "Sohan";   //O(1)
@@ -586,6 +590,9 @@ int main()
 // Sets
 // Time complexity of Sets when insertion, find, erase, and Accessing is: log(n)...
 
+// We can take complex DS ex: (Set<pair<int,int>>, set<set<int>> map<pair<int, string>>).... Beacause internal implementaion using (Red Black Tree).....
+
+
 
     // set<int> s = {5,4,3,2,5};
     // // s.insert(1);                     // log(n)...
@@ -647,10 +654,10 @@ int main()
 
 
 
-// Unordered sets...
+// Unordered sets...  (Internal implemnetaions using hash tables...)
 // Time complexity of Unordered_Sets when insertion, find, erase, and Accessing is: O(1)...
 
-    // unordered_set<int> s;
+    // unordered_set<int> s;       // We cannot take complex DS ex: (unordered_Set<pair<int,int>>, unordered_set<set<int>> ).... Beacause Hash function inbuilt are not defined in c++...  
     // s.insert(2);            // O(1)....
     // s.insert(3);
     // s.insert(1);
@@ -678,40 +685,47 @@ int main()
 
 
 // Print Yes, if string is present in set or print No, if string is not present in set...
-    int N;
-    cout << "Enter number of strings: ";                                                          
-    cin >> N;
-    unordered_set<string> s;
-    cout << "Enter strings one by one...";
-    for (int i = 0; i < N; i++)
-    {
-        string x;
-        cin >> x;
-        s.insert(x);
-    }
-    cout << "Size of set is: " << s.size() << endl;
-    for(auto &key : s)
-    {
-        cout << key << " ";
-    }
-    cout << endl;
-    cout << "Enter number of queries you want to search...";
-    int q;
-    cin >> q;
-    while (q--)
-    {
-    cout << "Enter string which you want to check: ";
-    string str;
-    cin >> str;
+    // int N;
+    // cout << "Enter number of strings: ";                                                          
+    // cin >> N;
+    // unordered_set<string> s;
+    // cout << "Enter strings one by one...";
+    // for (int i = 0; i < N; i++)
+    // {
+    //     string x;
+    //     cin >> x;
+    //     s.insert(x);
+    // }
+    // cout << "Size of set is: " << s.size() << endl;
+    // for(auto &key : s)
+    // {
+    //     cout << key << " ";
+    // }
+    // cout << endl;
+    // cout << "Enter number of queries you want to search...";
+    // int q;
+    // cin >> q;
+    // while (q--)
+    // {
+    // cout << "Enter string which you want to check: ";
+    // string str;
+    // cin >> str;
 
-    // auto it = s.find(st);
-    if(s.find(str) != s.end())
-        cout << "Yes... String is present in set..." << endl;
-    else    
-        cout << "No... String is not present in set..." << endl;
+    // // auto it = s.find(st);
+    // if(s.find(str) != s.end())
+    //     cout << "Yes... String is present in set..." << endl;
+    // else    
+    //     cout << "No... String is not present in set..." << endl;
 
-    }
+    // }
     
+
+
+
+
+
+
+// 
     
     
 
