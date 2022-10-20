@@ -650,8 +650,15 @@ int main()
 // Unordered sets...
 // Time complexity of Unordered_Sets when insertion, find, erase, and Accessing is: O(1)...
 
-    unordered_set<string> s;
-    
+    unordered_set<int> s;
+    s.insert(2);
+    s.insert(3);
+    s.insert(1);
+    for(auto &i : s)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
     
 
 
