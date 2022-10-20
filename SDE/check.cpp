@@ -654,6 +654,17 @@ int main()
     s.insert(2);
     s.insert(3);
     s.insert(1);
+    cout << "Size of unordered set is: " << s.size() << endl;
+    auto it = s.find(1);
+    if(it != s.end()){
+        cout << "Value find..." << *it << endl;
+        cout << "Erasing this value... " << endl;
+        s.erase(it); 
+    }
+    else
+        cout << "Value not found... " << endl;
+    
+    cout << "Size of unordered set is: " << s.size() << endl;
     for(auto &i : s)
     {
         cout << i << " ";
