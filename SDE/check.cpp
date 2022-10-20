@@ -702,12 +702,12 @@ int main()
     {
     string st;
     cin >> st;
-   
-        auto it = s.find(st);
-        if(it != s.end())
-            cout << "Yes... String is present in set..." << endl;
-        else    
-            cout << "No... String is not present in set..." << endl;
+    
+    auto it = s.find(st);
+    if(it != s.end())
+        cout << "Yes... String is present in set..." << endl;
+    else    
+        cout << "No... String is not present in set..." << endl;
 
     }
     
