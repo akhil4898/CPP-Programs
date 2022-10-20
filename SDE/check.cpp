@@ -651,7 +651,7 @@ int main()
 // Time complexity of Unordered_Sets when insertion, find, erase, and Accessing is: O(1)...
 
     unordered_set<int> s;
-    s.insert(2);
+    s.insert(2);            // O(1)....
     s.insert(3);
     s.insert(1);
     cout << "Size of unordered set is: " << s.size() << endl;
