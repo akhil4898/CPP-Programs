@@ -623,25 +623,37 @@ int main()
 
 // Print unique strings in lexiographical order...
 
-    set<string> s;
-    cout << "Enter number of strings you want: ";
-    int N;
-    cin >> N;
-    cout << "Enter strings: ";
-    for (int i = 0; i < N; i++)
-    {
-        string x;
-        cin >> x;
-        s.insert(x);
-    }
-    cout << "Size is: " << s.size() << endl;
-    cout << "Sets elements are: " << endl;
-    for(auto &key : s)
-    {
-        cout << key << " ";
-    }
-    cout << endl;
+    // set<string> s;
+    // cout << "Enter number of strings you want: ";
+    // int N;
+    // cin >> N;
+    // cout << "Enter strings: ";
+    // for (int i = 0; i < N; i++)
+    // {
+    //     string x;
+    //     cin >> x;
+    //     s.insert(x);
+    // }
+    // cout << "Size is: " << s.size() << endl;
+    // cout << "Sets elements are: " << endl;
+    // for(auto &key : s)
+    // {
+    //     cout << key << " ";
+    // }
+    // cout << endl;
     
+
+
+
+
+
+// Unordered sets...
+// Time complexity of Unordered_Sets when insertion, find, erase, and Accessing is: O(1)...
+
+    unordered_set<string> s;
+    
+    
+
 
 
 
