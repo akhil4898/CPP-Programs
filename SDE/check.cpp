@@ -695,14 +695,15 @@ int main()
         cout << key << " ";
     }
     cout << endl;
-    cout << "Enter string which you want to check: ";
+    cout << "Enter number of queries you want to search...";
     int q;
     cin >> q;
     while (q--)
     {
+    cout << "Enter string which you want to check: ";
     string st;
     cin >> st;
-    
+
     auto it = s.find(st);
     if(it != s.end())
         cout << "Yes... String is present in set..." << endl;
