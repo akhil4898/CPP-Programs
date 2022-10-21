@@ -654,6 +654,7 @@ int main()
 
 
 
+
 // Unordered sets...  (Internal implemnetaions using hash tables...)
 // Time complexity of Unordered_Sets when insertion, find, erase, and Accessing is: O(1)...
 
@@ -725,6 +726,7 @@ int main()
 
 
 
+
 // MultiSets: Internally used (Red Balck Tree)...
 // It contains multiple values in ordered way and Duplcate elements are allowed...
 
@@ -732,59 +734,78 @@ int main()
 
 
 
-    multiset<int> m;
-    m.insert(12);                   // log(n)...
-    m.insert(13);           
-    m.insert(90);
-    m.insert(13);
-    m.insert(12);
-    m.insert(12);
-    m.insert(13);
-    cout << "Size: " << m.size() << endl;
-    for(auto &key : m)
-    {
-        cout << key << " ";
-    }
-    cout << endl;
+    // multiset<int> m;
+    // m.insert(12);                   // log(n)...
+    // m.insert(13);           
+    // m.insert(90);
+    // m.insert(13);
+    // m.insert(12);
+    // m.insert(12);
+    // m.insert(13);
+    // cout << "Size: " << m.size() << endl;
+    // for(auto &key : m)
+    // {
+    //     cout << key << " ";
+    // }
+    // cout << endl;
 
-    cout << "Enter number which you want to delete: ";
-    int q;
-    cin >> q;
-    auto it = m.find(q);
-    if(it != m.end())
-    {
-        cout << "Value found...." << endl;
-        m.erase(it);                            // It will delete only the element which (it) Iterator points not duplicates... 
-    }
-    else
-    {
-        cout << "Value not found..." << endl;
-    }
-    for(auto &key : m)
-    {
-        cout << key << " ";
-    }
-    cout << endl;
+    // cout << "Enter number which you want to delete: ";
+    // int q;
+    // cin >> q;
+    // auto it = m.find(q);
+    // if(it != m.end())
+    // {
+    //     cout << "Value found...." << endl;
+    //     m.erase(it);                            // It will delete only the element which (it) Iterator points not duplicates... 
+    // }
+    // else
+    // {
+    //     cout << "Value not found..." << endl;
+    // }
+    // for(auto &key : m)
+    // {
+    //     cout << key << " ";
+    // }
+    // cout << endl;
 
 
-    cout << "Enter number which you wan to delete: ";
-    int q1;
-    cin >> q1;
-    m.erase(q1);                              // It will delete all duplicate elements of (q1)...
-    for(auto &key : m)
-    {
-        cout << key << " ";
-    }
-    cout << endl;
+    // cout << "Enter number which you wan to delete: ";
+    // int q1;
+    // cin >> q1;
+    // m.erase(q1);                              // It will delete all duplicate elements of (q1)...
+    // for(auto &key : m)
+    // {
+    //     cout << key << " ";
+    // }
+    // cout << endl;
     
     
     
-    // cout << "After clear the set..." << endl;
-    // m.clear();
-    // cout << "Size is: " << m.size() << endl;
+    // // cout << "After clear the set..." << endl;
+    // // m.clear();
+    // // cout << "Size is: " << m.size() << endl;
     
     
 
+
+
+
+
+// ===================================================================================================
+
+
+
+
+
+
+// Nested in Maps and Sets...
+
+
+    map<pair<int, int>, int> m;
+    pair<int, int> p1, p2;
+    p1 = {1,2};
+    p2 = {2,3};
+    cout << "Check Greater: " << endl << (p1 < p2); 
 
 
 
