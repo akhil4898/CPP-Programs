@@ -805,7 +805,7 @@ int main()
     pair<int, int> p1, p2;
     p1 = {1,2};
     p2 = {2,3};
-    cout << "Check Greater: " << endl << (p1 < p2); 
+    cout << (p1 < p2) << endl; 
 
 
 
