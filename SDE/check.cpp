@@ -726,12 +726,15 @@ int main()
 
 
 // MultiSets: Internally used (Red Balck Tree)...
-// It contains multiple values and non-Unique values also...
+// It contains multiple values in ordered way and Duplcate elements are allowed...
+
+// Time complexity of Multiset when insertion, find, erase, and Accessing is: O(log(n))...
+
 
 
     multiset<int> m;
-    m.insert(12);
-    m.insert(13);
+    m.insert(12);                   // log(n)...
+    m.insert(13);           
     m.insert(90);
     m.insert(13);
     m.insert(12);
