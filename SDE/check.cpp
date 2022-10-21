@@ -746,13 +746,15 @@ int main()
         cout << key << " ";
     }
     cout << endl;
+
+    cout << "Enter number which you want to delete: ";
     int q;
     cin >> q;
     auto it = m.find(q);
     if(it != m.end())
     {
         cout << "Value found...." << endl;
-        m.erase(it);
+        m.erase(it);                            // It will delete only the element which (it) Iterator points not duplicates... 
     }
     else
     {
@@ -762,8 +764,21 @@ int main()
     {
         cout << key << " ";
     }
+    cout << endl;
 
 
+    cout << "Enter number which you wan to delete: ";
+    int q1;
+    cin >> q1;
+    m.erase(q1);                              // It will delete all duplicate elements of (q1)...
+    for(auto &key : m)
+    {
+        cout << key << " ";
+    }
+    cout << endl;
+    
+    
+    
     // cout << "After clear the set..." << endl;
     // m.clear();
     // cout << "Size is: " << m.size() << endl;
