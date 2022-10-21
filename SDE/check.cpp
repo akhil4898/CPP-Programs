@@ -752,8 +752,9 @@ int main()
     else
         cout << "Value not found..." << endl;
 
-
-
+    cout << "After clear the set..." << endl;
+    m.clear();
+    cout << "Size is: " << m.size() << endl;
     
     
 
