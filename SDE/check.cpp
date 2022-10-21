@@ -746,15 +746,27 @@ int main()
         cout << key << " ";
     }
     cout << endl;
-
-    if(m.find(11) != m.end())
+    int q;
+    cin >> q;
+    auto it = m.find(q);
+    if(it != m.end())
+    {
         cout << "Value found...." << endl;
+        m.erase(it);
+    }
     else
+    {
         cout << "Value not found..." << endl;
+    }
+    for(auto &key : m)
+    {
+        cout << key << " ";
+    }
 
-    cout << "After clear the set..." << endl;
-    m.clear();
-    cout << "Size is: " << m.size() << endl;
+
+    // cout << "After clear the set..." << endl;
+    // m.clear();
+    // cout << "Size is: " << m.size() << endl;
     
     
 
