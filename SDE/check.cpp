@@ -803,9 +803,10 @@ int main()
 
     map<pair<int, int>, int> m;
     pair<int, int> p1, p2;
-    p1 = {1,2};
+    p1 = {1,2};                  // checking pair 1. By first element of both pair(greater or small).. 2. If both pair first element is same then checking with second element of both pair(greater or small)...
     p2 = {2,3};
     cout << (p1 < p2) << endl; 
+    
 
 
 
