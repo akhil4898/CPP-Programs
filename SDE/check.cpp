@@ -725,7 +725,30 @@ int main()
 
 
 
-// MultiSets:
+// MultiSets: Internally used (Red Balck Tree)...
+// It contains multiple values and non-Unique values also...
+
+
+    multiset<int> m;
+    m.insert(12);
+    m.insert(13);
+    m.insert(90);
+    m.insert(13);
+    m.insert(12);
+    m.insert(12);
+    m.insert(13);
+    cout << "Size: " << m.size() << endl;
+    for(auto &key : m)
+    {
+        cout << key << " ";
+    }
+    cout << endl;
+
+    if(m.find(11) != m.end())
+        cout << "Value found...." << endl;
+    else
+        cout << "Value not found..." << endl;
+
 
 
     
