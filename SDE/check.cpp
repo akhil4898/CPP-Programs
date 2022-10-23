@@ -786,6 +786,25 @@ int main()
     // // cout << "Size is: " << m.size() << endl;
     
     
+    multiset<int> m;
+    m.insert(10);
+    m.insert(100);
+    m.insert(50);
+    m.insert(11);
+    m.insert(2);
+    m.insert(30);
+    m.insert(70);
+    auto it1 = m.find(10);
+    auto it2 = m.find(100);
+    m.erase(it1, it2);          // elements from 10 to elements before 100 erased...
+    for(auto &val : m)
+        cout << val << " ";
+    cout << endl;
+
+    
+
+
+
 
 
 
