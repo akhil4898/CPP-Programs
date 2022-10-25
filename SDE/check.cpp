@@ -814,6 +814,7 @@ int main()
 
 
 
+
 // Nested in Maps and Sets...
 
 
@@ -839,14 +840,7 @@ int main()
     
 
 
-    multiset<int> m;
-    m.insert(10);
-    m.insert(10);
-    for(auto &v: m)
-    {
-        cout << v << " ";
-    }
-    cout << endl;
+   
 
     return 0;   
 } 
